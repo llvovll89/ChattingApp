@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Geon kao talk</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="user-container">
+            <label for="nickname">
+                <span>💩</span>
+                대화명
+            </label>
+            <input type="text" id="nickname" value="닉네임적어주세요" class="input-text" onclick="nullText()">
+        </div>
+        <div class="display-container">
+            <ul class="chatting-list"></ul>
+        </div>
+        <div class="input-container">
+            <span>
+                <input type="text" class="chatting-input" onclick="nullText()">
+                <button class="send-button">Send</button>
+            </span>
+        </div>
+    </div>
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/chat.js"></script>
+</body>
+</html>
